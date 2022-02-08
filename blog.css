@@ -1,0 +1,141 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* Blog Section */
+#blog {
+    font-family: 'helvetica', sans-serif;
+    background-color: #2D2D39;
+    color: #fff;
+    width: 100%;
+    height: 1200px;
+}
+.header {
+    text-align: center;
+    padding: 50px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.line {
+    width: 2.5rem;
+    height: .3rem;
+    background-color: rgb(61, 168, 255);
+    border-radius: 5px;
+    margin: auto;
+    margin-top: -40px;
+}
+.content {
+    max-width: 1000px;
+    height: 80vh;
+    margin: 20px auto;
+    
+}
+.item {
+    background-color: #353543;
+    overflow: hidden ;
+    width: 50%;
+    height: 210px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.item .image-bali {
+    height: 170px;
+    background-repeat: no-repeat;
+    background-image: url(img/bali.jpg);  
+}
+.item .image-malang {
+    height: 170px;
+    background-repeat: no-repeat;
+    background-image: url(img/malang.jpg);
+}
+.item .image-ijen {
+    height: 170px;
+    background-repeat: no-repeat;
+    background-image: url(img/bwi.jpeg);
+
+}
+.item .image-rj {
+    height: 170px;
+    background-repeat: no-repeat;
+    background-image: url(img/papua.jpg);
+}
+.item #image:hover {
+    filter: brightness(.7);
+    transition-duration: 0.3s;
+}
+.item .text {
+    font-weight: 600;
+    font-size: .75rem;
+    margin-top: 14px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.text span a {
+    font-weight: 100px;
+    font-size: 0.7rem;
+    color:  rgb(35, 111, 173);
+    float: right;
+}
+.text span a:hover {
+    color: rgb(61, 168, 255);
+    transition-duration: 0.3s;
+}
+
+
+/* End Blog Section */
+
+@media screen and (min-width: 700px) {
+    #blog {
+        height: 100vh;
+    }
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .item {
+        width: 30%;
+        margin: 20px 50px;
+    }
+}
