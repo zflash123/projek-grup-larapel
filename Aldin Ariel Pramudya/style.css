@@ -1,0 +1,64 @@
+h1{
+    font-family : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 45px;
+    text-align: center;
+    color :rgb(255, 255, 255);
+}
+
+h3{
+    text-align: center;
+    color :rgb(255, 255, 255);
+}
+
+
+body
+{
+    background:#376381;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card
+{
+    background: white;
+    width: 270px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.cardImage
+{
+    background-color: darkblue;
+    height: 150px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.image-1{
+    background-image: url('image\ 1.jpg');
+}
+.image-2{
+    background-image: url('image\ 2.jpg');
+}
+.image-3{
+    background-image: url('image\ 3.jpg');
+}
+
+.card p{
+    padding: 10px;
+}
+
+.card:hover
+{
+    background-color: rgb(12, 87, 173);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 1s ease;
+}
